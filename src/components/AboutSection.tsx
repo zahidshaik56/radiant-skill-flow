@@ -8,7 +8,6 @@ const AboutSection = () => {
     { year: '2022', event: 'Started Web Development Journey' },
     { year: '2023', event: 'Learned React.js & Python' },
     { year: '2024', event: 'Completed Multiple Internships' },
-    { year: '2024', event: 'Built Professional Projects' },
   ];
 
   return (
@@ -37,6 +36,21 @@ const AboutSection = () => {
               <User className="text-cyan-400 mr-3" size={24} />
               <h3 className="text-2xl font-semibold">Professional Bio</h3>
             </div>
+            
+            {/* Photo Placeholder */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="w-48 h-48 bg-gradient-to-r from-cyan-500/20 to-blue-600/20 rounded-full border-2 border-cyan-500/30 flex items-center justify-center mb-6 mx-auto lg:mx-0"
+            >
+              <div className="text-cyan-400 text-center">
+                <User size={48} className="mx-auto mb-2" />
+                <p className="text-sm">Add Photo</p>
+              </div>
+            </motion.div>
+
             <p className="text-gray-300 leading-relaxed mb-6">
               I'm a passionate web developer with expertise in React.js, Python, and modern web technologies. 
               Currently pursuing my studies while actively building projects and gaining real-world experience 
