@@ -120,30 +120,6 @@ const ContactSection = () => {
                 </motion.div>
               ))}
             </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="mt-8 p-6 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-xl border border-cyan-500/20"
-            >
-              <h4 className="text-xl font-semibold text-white mb-3">Why Work With Me?</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0" />
-                  Clean, modern code following best practices
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0" />
-                  Responsive design that works on all devices
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0" />
-                  Fast delivery and excellent communication
-                </li>
-              </ul>
-            </motion.div>
           </motion.div>
 
           {/* Contact Form */}
